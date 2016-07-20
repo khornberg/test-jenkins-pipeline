@@ -8,5 +8,5 @@ class App1Tests(TestCase):
         self.assertEqual(1, 1)
 
     def test_app1_long(self):
-        time.sleep(3)
+        time.sleep(10)
         self.assertEqual(True, True)
