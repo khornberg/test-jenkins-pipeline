@@ -1,6 +1,6 @@
 stage 'Clone repo'
 node {
-    git poll: false, url: 'https://github.com/khornberg/test-jenkins-pipeline'
+    git poll: false, url: 'https://github.com/khornberg/test-jenkins-pipeline', branch: 'feature/longer-times'
 }
 
 stage 'Install deps'
