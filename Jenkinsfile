@@ -8,7 +8,7 @@ node {
     sh 'virtualenv venv'
     sh '. venv/bin/activate'
     sh 'pip install django'
-    stash includes: '.', name: 'repo'
+    stash includes: '**', name: 'repo'
 }
 
 stage 'Run Tests'
